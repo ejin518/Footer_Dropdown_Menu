@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!-- 윈도우xp,윈도우7 을쓰시는분들은 이걸 선언하면은 호환성모드 버튼이 제거됨.  -->
+<!-- 윈도우8부터~윈도우10까지는 호환성모드 버튼을 제거  -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!-- 선언을 하지않으면 euc-kr로 기본셋팅이 잡혀있음.  -->
+<!-- 유니코드 euc-kr = ANSI 동일한 국문영문전용 ,  utf-8 글로벌   -->
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes"><!-- 브라우저의 UI를 안보이게 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 상태바의 색상 지정 -->
+
+
+<meta name="robots" content="index,follow">
+
+<title>20200511</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><!-- 1.11 ~ 3.1 -->
+<link rel="stylesheet" href="/css/common.css" type="text/css">
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+</head>
+<body >
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".search").click(function(){
+		$(this).toggleClass('on');
+		$(".scroll").slideToggle();
+	});
+});
+</script>
+
+<div id="footer">
+	<div class="foot">
+		<div class="search">
+			<span>윤선생 웰스터디<i class="fas fa-angle-down"></i></span>
+			<div class="scroll" id="style-6">
+				<ul >
+					<li><a href="https://wellstudy.yoons.com" target="_blank" title="새창">윤선생 웰스터디</a></li>
+					<li><a href="https://basic.yoons.com" target="_blank" title="새창">윤선생 베이직</a></li>
+					<li><a href="http://igseacademy.com" target="_blank" title="새창">윤선생 IGSE아카데미</a></li>
+					<li><a href="http://www.yoonskids.com" target="_blank" title="새창">윤선생 스마트랜드</a></li>
+					<li><a href="http://www.junglebeat.co.kr" target="_blank" title="새창">윤선생 정글비트</a></li>
+					<li><a href="https://ai.yoons.com" target="_blank" title="새창">윤선생 스피커북</a></li>
+					<li><a href="https://cho.yoons.com" target="_blank" title="새창">윤선생 초통영</a></li>
+					<li><a href="http://www.igse.ac.kr" target="_blank" title="새창">국제영어대학원대학교</a></li>
+				</ul>
+			</div>
+		
+		</div>
+	</div>
+</div>
+<style type="text/css">
+#footer{background:black; padding:30px 0; margin-top:500px; }
+.foot{position:relative; width:1360px; min-height:117px;}
+.search{position:absolute; right:0; bottom:0; }
+.search.on span i{transform:rotateX(180deg);}
+.search span{display:inline-block; height:50px; border:2px solid #dfdfdf; line-height:46px; padding:0 20px; font-size:13px; color:#fff; cursor:pointer;}
+.search span i{vertical-align:middle; display:inline-block;  margin-left:50px; transition:0.5s all;}
+.scroll{position:absolute; left:0; bottom:48px; width:100%; height:200px;  border:2px solid #dfdfdf; background:black; overflow-y:scroll; display:none; }
+.scroll ul {min-height:350px; }
+.search ul li{height:40px; }
+.search ul li a{display:block; line-height:40px; font-size:13px; color:#fff; padding-left:10px; }
+
+/*
+ *  STYLE 6
+ */
+
+#style-6::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar-thumb
+{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+</style>
+
+</body>
+</html>
+
+
+
+
+
